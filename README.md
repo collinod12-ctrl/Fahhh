@@ -1,7 +1,7 @@
-# Fahhh - The Plugin
-Died in osrs? FAHHH!
+# BrainrotSounds
+This plugin is a passion project coupled with a learning experience. The aim is to add some modern comedic relief in the form of popular sound bytes from all over the internet.
 
-# This project is Strictly for Fun
+# This Project is Strictly for Fun
 After not using the Java language for quite some time, I have decided to dip my toes in the water by slowly working through creating a plugin for one of my favorite games of all time.
 
 # Inspiration
@@ -10,3 +10,6 @@ That being said, I am more than open to suggestions for other things to add to f
 
 # Acknowledgements
 This project wouldn't be possible without the [C-Engineer Completed](https://github.com/m0bilebtw/c-engineer-completed) teams work. Numerous portions of this project are thanks to their brilliance. 
+
+# Suggestions?
+Have an idea for a sound you'd like to include? Create an [Issue](https://github.com/collinod12-ctrl/BrainrotSounds/issues) with "Suggestion" somewhere in the title.
