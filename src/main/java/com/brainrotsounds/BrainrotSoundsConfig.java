@@ -1,11 +1,11 @@
-package com.fahhh;
+package com.brainrotsounds;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("fahhh")
-public interface FahhhConfig extends Config
+public interface BrainrotSoundsConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",
