@@ -1,13 +1,27 @@
 package com.brainrotsounds;
 
+import com.brainrotsounds.sound.Sound;
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 import net.runelite.client.config.ConfigSection;
 
-@ConfigGroup("fahhh")
+@ConfigGroup(BrainrotSoundsConfig.GROUP)
 public interface BrainrotSoundsConfig extends Config
 {
+	String GROUP = "brainrotsounds";
+
+	@ConfigItem(
+			keyName = "announceDeath",
+			name = "When you die",
+			description = "Should you hear the infamous 'FAHHH' tiktok sound when you die?",
+			section = SECTION_GENERAL_ANNOUNCEMENT_SETTINGS,
+			position = 1
+	)
+	default boolean announceDeath() {
+		return true;
+	}
+
 	@ConfigItem(
 		keyName = "greeting",
 		name = "Welcome Greeting",
@@ -21,7 +35,7 @@ public interface BrainrotSoundsConfig extends Config
 	@ConfigSection(
 			name = "General Announcement Settings",
 			description = "Settings for other details when various brainrot sounds play.",
-			position = 40
+			position = 1
 	)
 
 	String SECTION_GENERAL_ANNOUNCEMENT_SETTINGS = "General Announcement Settings";
@@ -31,7 +45,7 @@ public interface BrainrotSoundsConfig extends Config
 			name = "Announcement volume",
 			description = "Adjust how loud the audio announcements are played!",
 			section = SECTION_GENERAL_ANNOUNCEMENT_SETTINGS,
-			position = 42
+			position = 2
 	)
 	default int announcementVolume() {
 		return 100;

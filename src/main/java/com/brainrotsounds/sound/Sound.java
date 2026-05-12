@@ -7,6 +7,7 @@ import java.util.Random;
 @Getter
 public enum Sound {
     PLAYER_DEATH("Fahhh.wav"),
+    LOGGED("Logged.wav"),
      ;
 
     private final String resourceName;
